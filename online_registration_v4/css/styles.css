@@ -1,0 +1,178 @@
+/* ----- Global Styles ----- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ----- Base Element Styles ----- */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.15em;
+}
+
+label,
+p,
+select,
+span,
+input[placeholder="Required"],
+textarea {
+  font-weight: 200;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+span,
+input[placeholder="Required"] {
+  font-style: italic;
+}
+
+hr {
+  border-top: 1px solid black;
+  margin: 4px 0;
+}
+
+.thick {
+  border-top: 3px solid black;
+}
+
+.br {
+  border-radius: .325em;
+}
+
+/* ----- Form Element Styles ----- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background: #eff0f1;
+  outline: none;
+  border: none;
+  margin: 0 0 15px 0;
+  padding: 10px;
+}
+
+select {
+  height: 38px;
+}
+
+input[placeholder="Required"] {
+  text-align: right;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid black;
+  background: lightgoldenrodyellow;
+  transition: background .5s ease-in;
+}
+
+fieldset {
+  border: none;
+}
+
+.btn {
+  background-color: #2D3945;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+
+textarea,
+.btn {
+  width: 100%;
+}
+
+#zip {
+  max-width: 50%;
+}
+
+/* ----- Containers ----- */
+
+form {
+  width: 95%;
+  margin: 0 auto;
+}
+.main-header {
+  background: #2D3945;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.main-header,
+.intro,
+.main-footer  {
+  text-align: center;
+}
+
+.main-footer {
+  margin-top: auto;
+  padding: 1em 0;
+}
+
+.deets,
+.news-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-area {
+  margin: 10px 0;
+}
+
+.newsletter-wrapper {
+  background: #bccde2;
+}
+
+/* ----- media query ----- */
+
+@media (min-width:768px) {
+
+ fieldset {
+   padding-left: 0;
+   padding-right: 0;
+ }
+
+ form {
+   max-width: 850px;
+ }
+
+ .deets {
+   flex-direction: row;
+ }
+
+ .deets input,
+ .deets select {
+   flex-basis: 75%;
+   flex-grow: 1;
+ }
+
+ .deets label {
+   flex-basis: 25%;
+ }
+
+ #zip {
+   max-width: 33%;
+ }
+
+ label {
+   font-weight: 300;
+ }
+}
